@@ -143,7 +143,7 @@ namespace RSA
             int counter = 0;
             foreach (char c in textBox4.Text)
             {
-                encryptedmsg[counter] = c % 128;
+                encryptedmsg[counter] = c;
                 counter++;
             }
             StreamReader sr = new StreamReader(@"C:\Users\rolik\OneDrive\Desktop\New folder\public_Key.txt");
